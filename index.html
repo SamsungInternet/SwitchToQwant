@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="oui-css/oui.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Samsung Internet | Switch To Qwant</title>
+</head>
+<body>
+    <header>
+        <img class="gg-logo" src="https://www.samsung.com/global/galaxy/apps/samsung-internet/images/internet_logo.svg" alt="Samsung Internet Logo">
+        <span style="display: block; margin: 25px auto; width: 20%; border-bottom: 1px solid black;"></span>
+        <img style="display: block;margin: 0 auto;" width="100" src="https://www.qwant.com/img/v4/logo-home.svg" alt="Qwant logo">
+    </header>
+
+    <main>
+        <article id="main">
+            <div>
+                <h2 style="font-weight: bold;margin: 50px 0;">Browse the web securely with Qwant on Samsung Internet</h2>
+                <p>1st Step</p>
+                <a class="btn oui-button" href="https://galaxy.store/internet">Download Samsung Internet</a>
+                <p>2nd Step</p>
+                <a class="btn oui-button" href="setup.html">Setup Qwant</a>
+            </div>
+        </article>
+        <div class="modal">
+            <div class="oui-dialog-mask"></div>
+            <div class="oui-dialog">
+                <div class="oui-dialog-header">
+                    Are you a developer ?
+                </div>
+                <div class="oui-dialog-description">
+                    <p style="padding: 0;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora obcaecati, blanditiis ea possimus veritatis, amet ipsa doloremque, similique ad eveniet cupiditate modi voluptatem. Illum hic iusto soluta consectetur temporibus voluptatem.</p>
+                    <p style="padding: 0;">To learn more about us on Twitter: <a href="https://twitter.com/SamsungInternet">@SamsungInternet</a> </p>
+                    <div class="oui-dialog-action">
+                        <a href="#" class="oui-dialog-action-link close">Close</a>                            
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <nav>
+        <!-- <a href="#modal" id="open" class="btn">
+            Are you a developer?
+        </a> -->
+    </nav>
+</body>
+<script src="script.js"></script>
+<script>
+    window.addEventListener('load', () => {
+        let link = document.getElementById('open');
+        let modal = document.getElementsByClassName('modal')[0];
+        let close = document.getElementsByClassName('close')[0];
+
+        link.onclick = function(e){
+            modal.style.display = "block";
+            e.preventDefault()
+        }
+
+        close.onclick = function(){
+            modal.style.display= "none";
+        }
+    })
+</script>
+</html>
