@@ -112,3 +112,8 @@ nav{
 .modal{
     display: none
 }
+
+figcaption{
+    margin: 30px 40px 0px 40px;
+    font-style: italic;
+}
