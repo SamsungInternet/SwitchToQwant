@@ -117,3 +117,15 @@ figcaption{
     margin: 30px 40px 0px 40px;
     font-style: italic;
 }
+
+@media screen and (max-height: 630px){
+    header > span{
+        display: block;
+        margin: 15px auto !important;
+    }
+
+    main > article{
+        justify-content: flex-start;
+        padding-top: 170px;
+    }
+}
